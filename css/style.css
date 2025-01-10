@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background:url("/images/background-pattern-desktop.svg") no-repeat;  
+         width:99%; 
+         height:400px; 
+         background-size: cover;
+    background-color: hsl(275, 100%, 97%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: "Work Sans", serif;
+}
+
+.container{
+    margin-top: 650px;
+    background-color: hsl(0, 0%, 100%);
+    width: 600px;
+    border-radius: 20px;
+    
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.star-icon {
+    width: 40px;
+    height: auto;
+    margin-top: 12px;
+    margin-left: 15px;
+    margin-right: 25px;
+    margin-bottom: 18px;
+}
+
+header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    margin-top: 40px;
+    margin-bottom: 32px;
+    margin-left: 20px;
+}
+
+.questions {
+    width: 520px;
+    margin-left: 38px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    
+
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    flex-direction: column;
+    position: relative;
+}
+
+.ques {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.button {
+    position: relative;
+    top: -5px;
+    right: -5px;        
+}
+
+.ques, h2 {
+    margin: 0;
+    flex: 1;
+    line-height: 1.2;
+}
+
+h1 {
+    color: hsl(292, 42%, 14%);
+    font-size: 55px;
+}
+
+h2 {
+    color: hsl(292, 42%, 14%);
+    font-size: 18px;
+    margin-bottom: 15px;
+    
+}
+
+p {
+    
+    color: hsl(292, 16%, 49%);
+    font-size: 16px;
+    line-height: 22px;
+}
+
+hr {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    height: 1px;
+    width: 100%;
+    border: none;
+    border-top: 1px solid  hsl(275, 100%, 97%);
+}
+
+.credits {
+    margin-top: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (max-width: 1000px){
+    .container {
+        width: 327px;
+    }
+
+    .questions {
+        width: 279px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: -20px;
+    }
+
+    .star-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+
+    .ques_whole {
+        margin-bottom: -10px;
+    }
+
+    header {
+        margin-top: 24px;
+    }
+}
